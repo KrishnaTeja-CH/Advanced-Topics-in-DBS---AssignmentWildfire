@@ -69,5 +69,5 @@ def endgame():
     return render_template('index.html')
 
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     socketio.run(application, debug=True)
