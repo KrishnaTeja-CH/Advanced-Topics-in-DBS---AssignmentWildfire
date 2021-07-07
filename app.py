@@ -5,7 +5,6 @@ application = Flask(__name__)
 application.secret_key = "Krishna96"
 socketio = SocketIO(application)
 
-
 @application.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
@@ -70,5 +69,5 @@ def endgame():
     return render_template('index.html')
 
 
-if __name__ == '_main_':
+if _name_ == '_main_':
     socketio.run(application, debug=True)
