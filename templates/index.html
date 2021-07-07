@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+</head>
+<body style="background-color:powderblue;">
+    <div style="text-align: center">
+    <h1>Krishna Teja Chintala Cheruvu</h1>
+    <h2>1001861564</h2>
+    <h3>Quiz-6</h3>
+    </div>
+<div>
+    <form action="{{url_for('game')}}" enctype=multipart/form-data method="POST" style="width:30%;">
+        <fieldset>
+            <legend>Login</legend>
+            <input type="radio" name="user" value="player1" id="player1">
+            <label for="player1">Player 1</label>
+            <input type="radio" name="user" value="player2" id="player2">
+            <label for="player2">Player 2</label><br><br>
+            <label for="username"> Enter Your Name </label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="room">Enter the Room number</label>
+            <input type="text" id="room" name="room"><br><br>
+            <a href="/game"><input type="submit" value="login"></a>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
